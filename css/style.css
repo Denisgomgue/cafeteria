@@ -1,0 +1,322 @@
+:root{
+    --primario: #291200;
+    --secundario: #493627;
+    --auxiliar: #F1F1F1;
+    --footer_color: #502C10;
+    --boton: #704606;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+header{
+    width: 100vh;
+}
+.header{
+    background-color: var(--primario);
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+
+  
+}
+.logo{/*her1*/
+    display: flex;
+    color: white;
+    margin: 15px;
+    align-items: center;
+    gap: 20px;
+    
+}
+.logo > figcaption{
+    font-size: 25px;
+    font-weight: 600;
+}
+.logo.img{
+    height: 100%;
+    object-fit: contain;
+}
+.navegacion{/*her2*/
+    height: 100%;
+    /* background-color: bisque; */
+   
+}
+.lista{
+    height: auto;
+    display: flex;
+    /* background-color: aliceblue; */
+}
+.lista-opcion{
+    height: auto;
+    list-style: none;
+    /* background-color: #b15e1e; */
+    font-size: 30px;
+    
+}
+.link-menu{
+    color: white;
+    /* background-color: aqua; */
+    text-decoration: none;
+    padding: 10px 20px;
+   
+}
+.link-menu:hover{
+    border-bottom: solid 1px white;
+    color: var(--auxiliar);
+}
+
+/*MAIN-------------------------*/
+/*>>>>>>>>Seccion entrada<<<<<<<<<<<<<<*/
+main{
+    background-color: var(--auxiliar);
+    margin: 0;
+}
+/* .video{
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+} */
+.seccion-entrada{
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 3rem;
+    
+}
+h1{
+    font-size: 5.5rem;
+    color: white;
+}
+.seccion-entrada p{
+    color: #cfc8c3;
+    
+}
+.text-entrada{
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    align-items: flex-start;
+    
+}
+.boton{
+    background-color: var(--boton);
+    border: none;
+    color: white;
+    border-radius: 40px;
+    padding: 20px 40px;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 3rem;
+    font-weight: 100;
+
+}
+.boton:hover{
+    background-color: #a05d00;
+    font-weight: 500;
+    cursor: pointer;
+    border: solid 5px white;
+}
+
+/*>>>>>>>>>SECCION-NOSOTROS<<<<<<<<<<<<*/
+h2{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 400;
+}
+main hr{
+    width: 30%;
+    margin: auto;
+    border: solid 2px;
+}
+.seccion-nosotros{
+    background-color: var(--secundario);
+    color: white;
+    padding: 2rem 0;
+    font-size: 20px;
+    
+}
+.info-nosotros{
+    height: 40%;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    gap: 2rem;
+    padding: 40px 60px;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.info-nosotros p{
+    width: 50%;
+    text-align: justify;  
+}
+.img-nosotros{
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+    border: solid 1px var(--auxiliar);
+}
+/*>>>>>>>>>SECCION-SERVICIOS<<<<<<<<<<<<*/
+.seccion-servicios{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    color: var(--primario);
+    font-size: 20px;
+    margin: auto;
+    padding: 50px 0;
+    padding-bottom: 6rem;
+    background-color: var(--auxiliar);
+}
+h3{
+    font-weight: 400;
+}
+.titulo-servicios{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.servicios-box{
+    text-align: center;
+    display: grid;
+    flex-direction: row;
+    grid-template-rows: fit-content;
+    align-items: center;
+    row-gap: 2rem;
+}
+.img-servicios{
+    width: 100%;
+    object-fit: contain;
+}
+.valoracion{
+    font-size: 1;    
+}
+.estrella{
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/estrella_activa.png); 
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+
+}
+/*SECCION-MAPA-----------------*/
+.seccion-mapa{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+}
+.maps{
+    width: 100%;
+    height: 80vh;
+}
+.seccion-registro{
+   
+    position: absolute;
+    top: 1px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+.input-text{
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 60px;
+    font-size: 30px;
+    border: solid 3px rgb(134, 134, 134);
+    
+    padding-left: 10px;
+}
+
+
+.boton-registro{
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    background-color: var(--secundario);
+    width: 20%;
+    height: 68px;
+    color: white;
+    font-size: 24px;
+    font-weight: 100;
+    overflow: hidden;
+    border-style: none;
+    cursor: pointer;
+}
+.boton-registro:hover{
+    background-color: var(--boton);
+}
+
+/*<<<<<<<<<<FOOTER>>>>>>>>>>>>>>>>>*/
+.footer{
+    background-color: var(--primario);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 200;
+}
+.footer-info{
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    
+}
+.footer-info ul{
+    list-style: none;
+}
+.footer-info li{
+    padding: 10px 0;
+}
+.footer-info a{
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+}
+.footer-info a:hover{
+    font-weight: 400;
+}
+.footer-info p{
+    line-height: 3rem;
+}
+.footer-editor{
+    background-color: var(--footer_color);
+    width: 100%;
+    text-align: center;
+}
+.footer-editor p{
+    padding: 1rem;
+}
